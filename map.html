@@ -16,23 +16,15 @@
     <div id="legends">   
       
       <div id="legend_countries" class="legend">
-        <p class="legend_title">COUNTRY PM<sub>2.5</sub> LEVELS</p>
-        <span class="country_leftest">0.03</span><span class="country_rightest">153</span><br>
+        <p class="legend_title">COUNTRY log<sub>10</sub>(</sub>PM<sub>2.5</sub>) LEVELS</p>
+        <span class="country_leftest">&lt; 0.01</span><span class="country_rightest">&gt; 1.90</span><br>
         <aside class="colors">
 
-          <!--<div style="background-color:#BFE3BF;"></div>
-          <div style="background-color:#7FC87F;"></div>
-          <div style="background-color:#3EAC3E;"></div>
-          <div style="background-color:#218221;"></div>
-          <div style="background-color:#145214;"></div>-->
           <div style="background-color:#22FF45;"></div>
           <div style="background-color:#44FF45;"></div>
           <div style="background-color:#66FF45;"></div>
           <div style="background-color:#88FF45;"></div>
           <div style="background-color:#AAFF45;"></div>
-          
-           
-
           <div style="background-color:#CCFF45;"></div>
           <div style="background-color:#EEFF45;"></div>
           <div style="background-color:#FFEE45;"></div>
@@ -43,49 +35,11 @@
           <div style="background-color:#FF4445;"></div>
           <div style="background-color:#FF2245;"></div>
           <div style="background-color:#FF0045;"></div>
-
-
-
-          <!--<div style="background-color:#a0d080;"></div>
-          <div style="background-color:#90c070;"></div>
-          <div style="background-color:#8AB66C;"></div>
-           <div style="background-color:#80b060;"></div>
-           <div style="background-color:#70a050;"></div>
-
-           <div style="background-color:#609040;"></div>
-           <div style="background-color:#508030;"></div>
-           <div style="background-color:#407020;"></div>
-           <div style="background-color:#306010;"></div>
-           <div style="background-color:#203000;"></div>-->
-
-
           
         </aside>
         <div id="legend_cities" style="display:none">
-          <!--<aside class="colors colors2">
-            <div style="background-color:#B2D1F0;"></div>
-            <div style="background-color:#80B2E6;"></div>
-            <div style="background-color:#4D94DB;"></div>
-            <div style="background-color:#1975D1;"></div>
-            <div style="background-color:#005CB8;"></div>
-            <div style="background-color:#0052A3;"></div>
-            <div style="background-color:#00478F;"></div>
-            <div style="background-color:#003366;"></div>
-            <div style="background-color:#002952;"></div>
-            <div style="background-color:#001429;"></div>->
-
-          <!--<div style="background-color:#F7F7F7;"></div>
-          <div style="background-color:#DEDEDE;"></div>
-          <div style="background-color:#C6C6C6;"></div>
-          <div style="background-color:#ADADAD;"></div>
-          <div style="background-color:#949494;"></div>
-          <div style="background-color:#7C7C7C;"></div>
-          <div style="background-color:#636363;"></div>
-          <div style="background-color:#4A4A4A;"></div>
-          <div style="background-color:#313131;"></div>
-          <div style="background-color:#191919;"></div>-->
         </aside>
-          <span class="city_leftest">2</span><span class="city_rightest">153</span>
+          <span class="city_leftest"> &lt; 0.01 </span><span class="city_rightest"> &gt; 1.90</span>
           <p class="city_title">CITY PM<sub>2.5</sub> LEVELS</p><br>
         </div>
       </div>
@@ -142,10 +96,7 @@
 
   </body>
   <script type="cartocss/html" id="cities">
-  /*City Styles*/
-
-  
-
+/*City Styles*/
 #who_georeferenced_clean_v2{
   marker-fill-opacity: 0.8;
   marker-line-color: #FFF;
@@ -156,100 +107,6 @@
   marker-fill: #F7F7F7;
   marker-allow-overlap: true;
 }
-
-/*var colors = [
-    "#fff74b", "#ffd72d", "#FFaa00", "#FF8200", "#FF5a00", "#FF3200"
-    , "#f50000", "#c30000", "#870000", "#4e0000"
-    , "#a0d080", "#90c070", "#8AB66C", "#80b060"
-    , "#70a050", "#609040", "#508030", "#407020"
-    , "#306010", "#203000"
-  ];
-#who_georeferenced_clean_v2 [ pm_2_5 <= 154] {
-  marker-fill: colors[19];
-}
-#who_georeferenced_clean_v2 [ pm_2_5 <= 146.5] {
-  marker-fill: colors[18];
-}
-#who_georeferenced_clean_v2 [ pm_2_5 <= 139] {
-  marker-fill: colors[17];
-}
-#who_georeferenced_clean_v2 [ pm_2_5 <= 131.5] {
-  marker-fill: colors[16];
-}
-#who_georeferenced_clean_v2 [ pm_2_5 <= 124] {
-  marker-fill: colors[15];
-}
-#who_georeferenced_clean_v2 [ pm_2_5 <= 116.5] {
-  marker-fill: colors[14];
-}
-#who_georeferenced_clean_v2 [ pm_2_5 <= 109] {
-  marker-fill: colors[13];
-}
-#who_georeferenced_clean_v2 [ pm_2_5 <= 101.5] {
-  marker-fill: colors[12];
-}
-#who_georeferenced_clean_v2 [ pm_2_5 <= 94] {
-  marker-fill: colors[11];
-}
-#who_georeferenced_clean_v2 [ pm_2_5 <= 86.5] {
-  marker-fill: colors[10];
-}
-#who_georeferenced_clean_v2 [ pm_2_5 <= 79] {
-   marker-fill: colors[9];
-}
-#who_georeferenced_clean_v2 [ pm_2_5 <= 71.5] {
-   marker-fill: colors[8];
-}
-#who_georeferenced_clean_v2 [ pm_2_5 <= 64] {
-   marker-fill: colors[7];
-}
-#who_georeferenced_clean_v2 [ pm_2_5 <= 56.5] {
-   marker-fill: colors[6];
-}
-#who_georeferenced_clean_v2 [ pm_2_5 <= 49] {
-   marker-fill: colors[5];
- #who_georeferenced_clean_v2 [ pm_2_5 <= 41.5] {
-    marker-fill: colors[4];
- #who_georeferenced_clean_v2 [ pm_2_5 <= 34] {
- marker-fill: colors[3];
- #who_georeferenced_clean_v2 [ pm_2_5 <= 26.5] {
- marker-fill: colors[2];
- #who_georeferenced_clean_v2 [ pm_2_5 <= 19] {
- marker-fill: colors[1];
- #who_georeferenced_clean_v2 [ pm_2_5 <= 8.5] {
- marker-fill: colors[0];*/
-
-/*#who_georeferenced_clean_v2 [ pm_2_5 <= 154] {
-  marker-fill: #4e0000;
-}
-#who_georeferenced_clean_v2 [ pm_2_5 <= 140] {
-  marker-fill: #870000;
-}
-#who_georeferenced_clean_v2 [ pm_2_5 <= 125] {
-  marker-fill: #c30000;
-}
-#who_georeferenced_clean_v2 [ pm_2_5 <= 110] {
-  marker-fill: #f50000;
-}
-#who_georeferenced_clean_v2 [ pm_2_5 <= 90] {
-  marker-fill: #FF3200;
-}
-#who_georeferenced_clean_v2 [ pm_2_5 <= 69] {
-  marker-fill: #FF5a00;
-}
-#who_georeferenced_clean_v2 [ pm_2_5 <= 55] {
-  marker-fill: #FF8200;
-}
-#who_georeferenced_clean_v2 [ pm_2_5 <= 41] {
-  marker-fill: #FFaa00;
-}
-#who_georeferenced_clean_v2 [ pm_2_5 <= 28] {
-  marker-fill: #ffd72d;
-}
-#who_georeferenced_clean_v2 [ pm_2_5 <= 15] {
-  marker-fill: #fff74b;
-}*/
-
 
 #who_georeferenced_clean_v2 [ log_pm_2_5 <= 3] { //1.90
    marker-fill: #FF0045;
@@ -298,7 +155,7 @@
 }
 
 
-  </script>
+   </script>
 
    <script type="cartocss/html" id="pm25_na">
    /*Country Styles*/
@@ -310,69 +167,6 @@
   line-width: 1;
   line-opacity: 1;
 }
-
-/*#pm25_na [ {0} <= 49.92] {
-   polygon-fill: #4e0000;
-}
-#pm25_na [ {0} <= 32.54] {
-   polygon-fill: #870000;
-}
-#pm25_na [ {0} <= 25.17] {
-   polygon-fill: #c30000;
-}
-#pm25_na [ {0} <= 15.17] {
-   polygon-fill: #f50000;
-}
-#pm25_na [ {0} <= 10.85] {
-   polygon-fill: #FF3200;
-}
-#pm25_na [ {0} <= 9.15] {
-   polygon-fill: #FF5a00;
-}
-#pm25_na [ {0} <= 8.15] {
-   polygon-fill: #FF8200;
-}
-#pm25_na [ {0} <= 6.06] {
-   polygon-fill: #FFaa00;
-}
-#pm25_na [ {0} <= 4.62] {
-   polygon-fill: #ffd72d;
-}
-#pm25_na [ {0} <= 2.98] {
-   polygon-fill: #fff74b;
-}*/
-
-/*//ORIGINAL
-#pm25_na [ {0} <= 154] {
-   polygon-fill: #4e0000;
-}
-#pm25_na [ {0} <= 140] {
-   polygon-fill: #870000;
-}
-#pm25_na [ {0} <= 125] {
-   polygon-fill: #c30000;
-}
-#pm25_na [ {0} <= 110] {
-   polygon-fill: #f50000;
-}
-#pm25_na [ {0} <= 90] {
-   polygon-fill: #FF3200;
-}
-#pm25_na [ {0} <= 69] {
-   polygon-fill: #FF5a00;
-}
-#pm25_na [ {0} <= 55] {
-   polygon-fill: #FF8200;
-}
-#pm25_na [ {0} <= 41] {
-   polygon-fill: #FFaa00;
-}
-#pm25_na [ {0} <= 28] {
-   polygon-fill: #ffd72d;
-}
-#pm25_na [ {0} <= 15] {
-   polygon-fill: #fff74b;
-}*/
 
 #pm25_na [ {0} <= 3] { //1.90
    polygon-fill: #FF0045;
@@ -420,14 +214,11 @@
    polygon-fill: #22FF45;
 }
 
+   </script>
 
-
-
-    </script>
-
-    <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script> 
+   <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script> 
      
-     <script>
+   <script>
           $('#layer_selector li').click(function() {        
             $('#layer_select li').addClass('selected');
           });
@@ -533,10 +324,6 @@
             $('#tool-tip').hide();
             $(document).unbind('mousemove', event, false);
           });
-
-            
-
-            
     });
   }
 
@@ -622,7 +409,6 @@
           action: 'click',                  //options: true makes it stick(fixed position) on scroll
       });
 
-    </script>
-
+   </script>
 </script>
 </html>
