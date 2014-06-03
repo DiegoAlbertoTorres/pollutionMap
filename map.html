@@ -481,7 +481,7 @@
             sql: "SELECT * FROM bathymetry_layers",
             cartocss: "#bathymetry_layers{ polygon-fill: #598cdb;polygon-opacity: 0.2;line-color: #FFF;line-width: 0;line-opacity: 1;}"
             },{
-            sql: "SELECT * FROM pm25_na",
+            sql: "SELECT *, log(pm25_2000) AS log_pm25_2000, log(pm25_2001) AS log_pm25_2001, log(pm25_2002) AS log_pm25_2002, log(pm25_2003) AS log_pm25_2003, log(pm25_2004) AS log_pm25_2004, log(pm25_2005) AS log_pm25_2005, log(pm25_2006) AS log_pm25_2006, log(pm25_2007) AS log_pm25_2007, log(pm25_2008) AS log_pm25_2008, log(pm25_2009) AS log_pm25_2009, log(pm25_2010) AS log_pm25_2010, log(pm25_2011) AS log_pm25_2011, log(pm25_2012) AS log_pm25_2012 FROM pm25_na",
             cartocss: $('#pm25_na').html().format('pm25_2000'),
             interactivity: "cartodb_id, the_geom, pm25_2000, pm25_2001, pm25_2002, pm25_2003, pm25_2004, pm25_2005, pm25_2006, pm25_2007, pm25_2008, pm25_2009, pm25_2010, pm25_2011, pm25_2012, country"
             },{
